@@ -1,0 +1,208 @@
+html {
+    min-height: 100%;
+}
+body {
+    margin:0px;
+    padding:0px;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    color: whitesmoke;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+
+#responseHolder{
+    overflow: hidden;
+}
+
+.moviePreviewList {
+    list-style: none;
+}
+
+.moviePreviewWrap {
+    display:inline-block;
+}
+
+.moviePreview > div {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 5px;
+}
+.moviePreview {
+    min-width: 300px;
+    background-color: RGBA(0,0,0,0.2);
+    margin: 10px;
+    border: 0px solid;
+    border-radius: 30px;
+    display:inline-block;
+    height: 160px;
+}
+.moviePreview > .moviePoster {
+    height: 160px;
+    width: 100px;
+    float:none;
+    display:inline-block;
+}
+
+.movieBody {
+    background: linear-gradient(135deg,#10c4b2,#32a864);
+}
+
+.bookBody {
+    background: linear-gradient(135deg,#32a864,#b58a33);
+}
+
+header {
+    align-self: start;
+    align-content: center;
+    flex: 1 0 100%;
+    background-color: RGBA(0,0,0,0.2);
+    border-bottom-left-radius: 100%;
+    border: 0px solid;
+    padding: 15px 0px;
+}
+footer {
+    align-self: start;
+    align-content: center;
+    flex: 1 0 100%;
+    background-color: RGBA(0,0,0,0.2);
+    border-top-right-radius: 100%;
+    border: 0px solid;
+}
+
+footer > ul {
+    list-style: none;
+    margin:0px;
+    padding:0px;
+}
+footer > ul > li {
+    display: inline-block;
+    padding: 15px;
+}
+nav {
+    float: right;
+}
+
+nav > a {
+    color:whitesmoke;
+    padding: 15px;
+}
+
+#loadingCanvas {
+    position:relative;
+    left: calc(50% - 50px);
+}
+
+.movieSection, .bookSection {
+    background-color: RGBA(0,0,0,0.2);
+    padding: 25px;
+    margin:10px;
+    border: 0px solid;
+    border-radius: 25px;
+    flex: 0 1 800px;
+    transition: transform 1s ease-in-out;
+}
+
+.movieSection > h1, .bookSection > h1 {
+    margin-top: 0px;
+    text-align: center;
+}
+.searchTitle {
+    width: calc(100% - 150px);
+    margin-bottom: 5px;
+}
+
+.scrapeTitle {
+    width: calc(100% - 16px);
+    margin-bottom: 5px;
+}
+
+.scrapeYear {
+    margin-right: 5px;
+}
+
+.searchWrapper > input:last-child {
+    margin-left: 5px;
+    width: 120px;
+}
+
+.moviePoster, .bookCover {
+    display:inline-block;
+    align: left;
+    width: 250px;
+    border: 0px;
+    border-radius: 25px;
+    margin-right: 15px;
+}
+
+.movieInfoWrap, .bookInfoWrap {
+    display:inline-block;
+    align:right;
+}
+
+input[type=text]{
+    border: 2px solid lightgray;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input[type=text]:focus{
+    border: 2px solid gray;
+    outline: none;
+}
+
+input[type=submit]{
+    border: 2px solid lightgray;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+input[type=submit]:hover {
+    background-color: lightgray;
+}
+input[type=submit]:active {
+    background-color: darkgray;
+    outline:none;
+}
+
+.searchChooser {
+    list-style: none;
+    padding: 0px;
+}
+
+.searchChooserItem {
+    display:inline-block;
+    width: calc(50% - 20px);
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    border: 0px solid;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: RGBA(0,0,0,0.3);
+    transition: background 1s ease;
+}
+
+.searchChooserItem > a {
+    display:block;
+    width: 100%;
+    height: 100%;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.selected {
+    background-color: RGBA(255,255,255,0.3);
+    transition: background 1s ease;
+}
+
+.selected > a {
+    color:black;
+}
+
+.bookWrap > ul {
+    list-style: none;
+}
