@@ -1,0 +1,26 @@
+{
+    "name": "lamia/workapply",
+    "description": "WorkApply for LamiaOy",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Juuso Yli-Sorvari",
+            "email": "juuso@yli-sorvari.fi"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+      "psr-4": {
+        "Lamia\\Server\\": "src/lamia/server/classes",
+        "Lamia\\Client\\": "src/lamia/client/classes",
+        "Lamia\\Common\\": "src/lamia/common/classes"
+      }
+    },
+    "require": 
+        { 
+            "php": "^7.3",
+            "adhocore/jwt": "1.1.0",
+            "psr/container": "1.0.0"
+        }
+}
